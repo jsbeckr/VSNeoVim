@@ -8,7 +8,7 @@ vim.g.maplocalleader = " "
 -- Modes
 --   normal_mode = 'n',
 --   insert_mode = 'i',
---   visual_mode = 'v',
+--   visual_mode = 'v'
 --   visual_bloCk_mode = 'x',
 --   term_mode = 't',
 --   Command_mode = 'c',
@@ -21,10 +21,10 @@ keymap('n', '<C-l>', '<C-w>l', options)
 -- Lexplore
 keymap('n', '<leader>e', ':Lex 30<CR>', options)
 -- Resize with arrows
-keymap('n', '<C-Up>', ':resize -2<CR>', options)
-keymap('n', '<C-Down>', ':resize +2<CR>', options)
-keymap('n', '<C-Left>', ':vertical resize +2<CR>', options)
-keymap('n', '<C-Right>', ':vertical resize -2<CR>', options)
+keymap('n', '<C-S-Up>', ':resize -2<CR>', options)
+keymap('n', '<C-S-Down>', ':resize +2<CR>', options)
+keymap('n', '<C-S-Left>', ':vertical resize +2<CR>', options)
+keymap('n', '<C-S-Right>', ':vertical resize -2<CR>', options)
 -- Navigate Buffers
 keymap('n', 'L', ':bp!<CR>', options)
 keymap('n', 'S', ':bn!<CR>', options)
@@ -32,6 +32,8 @@ keymap('n', 'S', ':bn!<CR>', options)
 keymap('v', '<S-Tab>', '<gv', options)
 keymap('v', '<Tab>', '>gv', options)
 -- Move text up and down
+keymap("n", "J", ":m .+1<CR>==", options)
+keymap("n", "K", ":m .-2<CR>==", options)
 keymap("v", "<A-j>", ":m .+1<CR>==", options)
 keymap("v", "<A-k>", ":m .-2<CR>==", options)
 keymap("x", "J", ":move '>+1<CR>gv-gv", options)
@@ -39,7 +41,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", options)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", options)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", options)
 -- Code folding
-keymap('n', 'f', 'za', options)
+-- keymap('n', 'f', 'za', options)
 -- Open Configuration
 keymap('n', '<C-s>', ':e ~/.config/nvim/lua/<CR>', options)
 -- Home and End
