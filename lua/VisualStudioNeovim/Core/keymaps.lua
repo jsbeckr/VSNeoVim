@@ -29,6 +29,8 @@ keymap('n', '<C-S-Right>', ':vertical resize -2<CR>', options)
 keymap('n', '<C-Tab>', ':bp!<CR>', options)
 keymap('n', '<C-S-Tab>', ':bn!<CR>', options)
 -- Indentline texts
+keymap('n', '<S-Tab>', '<gv', options)
+keymap('n', '<Tab>', '>gv', options)
 keymap('v', '<S-Tab>', '<gv', options)
 keymap('v', '<Tab>', '>gv', options)
 -- Move text up and down

@@ -128,6 +128,14 @@ local mappings = {
     },
   },
 
+  n = {
+    name = "Neorg",
+    h = {"<cmd>Neorg workspace home<cr>", "Home Workspace"},
+    w = {"<cmd>Neorg workspace work<cr>", "Work Workspace"},
+    c = {"<cmd>Neorg gtd capture<cr>", "Capture Task"},
+    e = {"<cmd>Neorg gtd edit<cr>", "Edit Task"},
+  },
+
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
@@ -162,7 +170,7 @@ local mappings = {
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
-    c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
+    c = { "<cmd>Telescope <cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
