@@ -1,16 +1,3 @@
-local colors = {
-    bg = "#283347",
-    fg = "#ffffff",
-    blue = "#51afef",
-    yellow = "#e0af68",
-    cyan = "#00b4b4",
-    darkblue = "#081633",
-    green = "#10B981",
-    orange = "#FF8800",
-    magenta = "#c678dd",
-    red = "#db4b4b",
-}
-
 function env_cleanup(venv)
   if string.find(venv, "/") then
     local final_venv = venv
@@ -41,13 +28,6 @@ local config = {
     component_separators = '',
     section_separators = '',
     disabled_filetypes = {"NvimTree"},
-    theme = {
-      -- We are going to use lualine_c an lualine_x as left and
-      -- right section. Both are highlighted by c theme .  So we
-      -- are just setting default looks o statusline
-      normal = { c = { fg = colors.fg, bg = colors.bg } },
-      inactive = { c = { fg = colors.fg, bg = colors.bg } },
-    },
   },
   sections = {
     -- these are to remove the defaults
@@ -83,14 +63,14 @@ ins_left {
   function()
     return '▊'
   end,
-  color = { fg = colors.blue }, -- Sets highlighting of component
+  -- color = { fg = colors.blue }, -- Sets highlighting of component
   padding = { left = 0, right = 1 }, -- We don't need space before this
 }
 
 ins_left {
   'branch',
   icon = '',
-  color = { fg = colors.magenta, gui = 'bold' },
+  -- color = { fg = colors.magenta, gui = 'bold' },
 }
 
 ins_left {
@@ -105,7 +85,7 @@ ins_left {
 ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
-  color= { fg = colors.magenta },
+  -- color= { fg = colors.magenta },
 }
 
 ins_left {
@@ -114,7 +94,7 @@ ins_left {
     return "-- " .. str .. " --"
   end,
   color = {
-    fg = colors.blue,
+    -- fg = colors.blue,
   }
 }
 
@@ -152,7 +132,7 @@ ins_left {
   end,
   -- icon = " ",
   icon = "  ",
-  color = { gui = "bold", fg= colors.green},
+  -- color = { gui = "bold", fg= colors.green},
 }
 
 ins_right {
@@ -170,7 +150,7 @@ ins_right {
   end
   return ""
   end,
-  color = { fg = colors.green },
+  -- color = { fg = colors.green },
   cond = conditions.hide_in_width,
 }
 
@@ -180,13 +160,14 @@ ins_right {
   -- Is it me or the symbol for modified us really weird
   symbols = { added = ' ', modified = '柳', removed = ' ' },
   diff_color = {
-    added = { fg = colors.green },
-    modified = { fg = colors.orange },
-    removed = { fg = colors.red },
+    -- added = { fg = colors.green },
+    -- modified = { fg = colors.orange },
+    -- removed = { fg = colors.red },
   },
 }
 
-ins_right { 'location',  color = { fg = colors.yellow, gui = 'bold' } }
+-- ins_right { 'location',  color = { fg = colors.yellow, gui = 'bold' } }
+ins_right { 'location' }
 
 ins_right {
   'filetype',
@@ -197,14 +178,14 @@ ins_right {
   'o:encoding', -- option component same as &encoding in viml
   fmt = string.upper, -- I'm not sure why it's upper case either ;)
   cond = conditions.hide_in_width,
-  color = { fg = colors.green, gui = 'bold' },
+  -- color = { fg = colors.green, gui = 'bold' },
 }
 
 ins_right {
   'fileformat',
   fmt = string.upper,
   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-  color = { fg = colors.green, gui = 'bold' },
+  -- color = { fg = colors.green, gui = 'bold' },
 }
 
 
@@ -218,7 +199,7 @@ ins_right {
         return chars[index]
       end,
       padding = { left = 0, right = 0 },
-      color = { fg = colors.yellow, bg = colors.bg },
+      -- color = { fg = colors.yellow, bg = colors.bg },
       cond = nil,
   }
 

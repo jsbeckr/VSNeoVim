@@ -26,8 +26,8 @@ keymap('n', '<C-S-Down>', ':resize +2<CR>', options)
 keymap('n', '<C-S-Left>', ':vertical resize +2<CR>', options)
 keymap('n', '<C-S-Right>', ':vertical resize -2<CR>', options)
 -- Navigate Buffers
-keymap('n', 'L', ':bp!<CR>', options)
-keymap('n', 'S', ':bn!<CR>', options)
+keymap('n', '<C-Tab>', ':bp!<CR>', options)
+keymap('n', '<C-S-Tab>', ':bn!<CR>', options)
 -- Indentline texts
 keymap('v', '<S-Tab>', '<gv', options)
 keymap('v', '<Tab>', '>gv', options)
@@ -40,12 +40,8 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", options)
 keymap("x", "K", ":move '<-2<CR>gv-gv", options)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", options)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", options)
--- Code folding
--- keymap('n', 'f', 'za', options)
--- Open Configuration
-keymap('n', '<C-s>', ':e ~/.config/nvim/lua/<CR>', options)
 -- Home and End
-keymap('n', 'E', '<end>', options)
+keymap('n', 'L', '<end>', options)
 keymap('n', 'H', '<home>', options)
 -- Undo and Redo
 keymap('n', '<C-z>', ':undo<CR>', options)

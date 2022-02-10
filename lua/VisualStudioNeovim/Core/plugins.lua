@@ -115,12 +115,13 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim"
   -- git signs
   use "lewis6991/gitsigns.nvim"
+  -- colorschemes
+  use "sainnhe/sonokai"
+  use "rebelot/kanagawa.nvim"
   -- debugging
   use "Pocco81/DAPInstall.nvim"
   use "mfussenegger/nvim-dap"
   use "rcarriga/nvim-dap-ui"
-  use "VSNeoVim/Darkup"
-  use "VSNeoVim/onedarkest"
   use "kdheepak/lazygit.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim

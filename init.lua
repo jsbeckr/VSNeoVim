@@ -30,9 +30,9 @@ local Configs = {
   LazyGit = "VisualStudioNeovim.Configs.LazyGit",
 }
 
-for k,v in pairs(VisualStudioNeovim) do
+for k, v in pairs(VisualStudioNeovim) do
   require(v)
 end
-for k,v in pairs(Configs) do
+for k, v in pairs(Configs) do
   require(v)
 end

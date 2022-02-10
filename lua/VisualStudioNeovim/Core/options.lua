@@ -18,7 +18,7 @@ local optionsconfig = {
   splitbelow = true,
   splitright = true,
   swapfile = false,
-  timeoutlen = 100,
+  timeoutlen = 300,
   undofile = true,
   updatetime = 300,
   writebackup = false,
@@ -34,15 +34,11 @@ local optionsconfig = {
   scrolloff = 8,
   sidescrolloff = 8,
   background = 'dark',
+  termguicolors = true
 }
+
 local globalconfig = {
-  -- onedark
-  colors_name = 'onedark',
-  onedark_style = 'deep',
-  -- darkup
-  -- colors_name = 'darkup',
-  -- onedarkest
-  -- colors_name = 'onedarkest'
+  sonokai_style = 'andromeda'
 }
 
 for k, v in pairs(globalconfig) do
@@ -52,6 +48,5 @@ for k, v in pairs(optionsconfig) do
   OPTIONS[k] = v
 end
 
+vim.cmd "colorscheme kanagawa"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
-vim.cmd [[set formatoptions-=cro]]
