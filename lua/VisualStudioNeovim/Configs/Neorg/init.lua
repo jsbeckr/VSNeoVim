@@ -38,7 +38,12 @@ neorg.setup({
     },
     ['core.norg.journal'] = {},
     ['core.norg.manoeuvre'] = {},
-		["core.norg.concealer"] = {},
+		["core.norg.concealer"] = {
+      config = {
+        icon_preset = "varied",
+        markup_preset = "safe"
+      }
+    },
 		["core.norg.dirman"] = {
 			config = {
 				workspaces = {

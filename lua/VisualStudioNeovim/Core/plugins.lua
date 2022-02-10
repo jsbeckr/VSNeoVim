@@ -102,6 +102,8 @@ return packer.startup(function(use)
   use "simrat39/symbols-outline.nvim"
   -- Notifications
   use "rcarriga/nvim-notify"
+  -- Other UI niceness
+  use "stevearc/dressing.nvim"
   -- Maximizer
   use "szw/vim-maximizer"
   -- Treesitter
