@@ -104,6 +104,8 @@ return packer.startup(function(use)
   use "rcarriga/nvim-notify"
   -- Other UI niceness
   use "stevearc/dressing.nvim"
+  -- Scrollbar
+  use "dstein64/nvim-scrollview"
   -- Maximizer
   use "szw/vim-maximizer"
   -- Treesitter
@@ -113,6 +115,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
   -- Autopairs
   use "windwp/nvim-autopairs"
+  -- Multi Cursor
+  use "mg979/vim-visual-multi"
   -- language server settings defined in json for
   use "tamago324/nlsp-settings.nvim"
   -- git signs

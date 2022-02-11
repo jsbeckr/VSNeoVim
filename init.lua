@@ -1,37 +1,37 @@
-local VisualStudioNeovim = {
+local Core = {
 	-- Core
-	options = "VisualStudioNeovim.Core.options",
-	keymaps = "VisualStudioNeovim.Core.keymaps",
-	plugins = "VisualStudioNeovim.Core.plugins",
-	cursor = "VisualStudioNeovim.Core.cursor",
+	options = "simple.Core.options",
+	keymaps = "simple.Core.keymaps",
+	plugins = "simple.Core.plugins",
+	cursor = "simple.Core.cursor",
 }
 local Configs = {
 	-- Configs
-	FileExplorer = "VisualStudioNeovim.Configs.FileExplorer",
-	BufferLine = "VisualStudioNeovim.Configs.BufferLine",
-	LuaLine = "VisualStudioNeovim.Configs.LuaLine",
-	Terminal = "VisualStudioNeovim.Configs.Terminal",
-	Project = "VisualStudioNeovim.Configs.Project",
-	Impatient = "VisualStudioNeovim.Configs.Impatient",
-	IndentLine = "VisualStudioNeovim.Configs.IndentLine",
-	Alpha = "VisualStudioNeovim.Configs.Alpha",
-	WhichKey = "VisualStudioNeovim.Configs.WhichKey",
-	CMP = "VisualStudioNeovim.Configs.CMP",
-	LSP = "VisualStudioNeovim.Configs.LSP",
-	Tlescope = "VisualStudioNeovim.Configs.Telescope",
-	Colorizer = "VisualStudioNeovim.Configs.Colorizer",
-	Notification = "VisualStudioNeovim.Configs.Notification",
-	Treesitter = "VisualStudioNeovim.Configs.Treesitter",
-	Comments = "VisualStudioNeovim.Configs.Comments",
-	Autopairs = "VisualStudioNeovim.Configs.Autopairs",
-	Gitsigns = "VisualStudioNeovim.Configs.Gitsigns",
-	SymbolsOutline = "VisualStudioNeovim.Configs.SymbolsOutline",
-	DAP = "VisualStudioNeovim.Configs.DAP",
-	LazyGit = "VisualStudioNeovim.Configs.LazyGit",
-  Neorg = "VisualStudioNeovim.Configs.Neorg"
+	FileExplorer = "simple.Configs.FileExplorer",
+	BufferLine = "simple.Configs.BufferLine",
+	LuaLine = "simple.Configs.LuaLine",
+	Terminal = "simple.Configs.Terminal",
+	Project = "simple.Configs.Project",
+	Impatient = "simple.Configs.Impatient",
+	IndentLine = "simple.Configs.IndentLine",
+	Alpha = "simple.Configs.Alpha",
+	WhichKey = "simple.Configs.WhichKey",
+	CMP = "simple.Configs.CMP",
+	LSP = "simple.Configs.LSP",
+	Telescope = "simple.Configs.Telescope",
+	Colorizer = "simple.Configs.Colorizer",
+	Notification = "simple.Configs.Notification",
+	Treesitter = "simple.Configs.Treesitter",
+	Comments = "simple.Configs.Comments",
+	Autopairs = "simple.Configs.Autopairs",
+	Gitsigns = "simple.Configs.Gitsigns",
+	SymbolsOutline = "simple.Configs.SymbolsOutline",
+	DAP = "simple.Configs.DAP",
+	LazyGit = "simple.Configs.LazyGit",
+  Neorg = "simple.Configs.Neorg"
 }
 
-for k, v in pairs(VisualStudioNeovim) do
+for k, v in pairs(Core) do
 	require(v)
 end
 for k, v in pairs(Configs) do

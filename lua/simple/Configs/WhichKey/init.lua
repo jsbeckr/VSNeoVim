@@ -205,8 +205,8 @@ local mappings = {
     q = { "<cmd>lua require'dap'.close()<cr>", "Quit" },
   },
   H = {
-    name = "VisualStudioNeovim",
-    c = { "<cmd>edit ~/.config/nvim/lua/VisualStudioNeovim/ <CR>", "Configuration" },
+    name = "Simple Config",
+    c = { "<cmd>edit ~/.config/nvim/lua/simple/ <CR>", "Configuration" },
     k = { "<cmd>Telescope keymap<CR>", "Keyboard Shortcuts" },
     p = { "<cmd>PackerStatus<CR>", "Plugins" },
     u = { "<cmd>PackerUpdate<CR>", "Update" },

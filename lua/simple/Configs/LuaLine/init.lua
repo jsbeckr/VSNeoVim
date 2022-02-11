@@ -188,20 +188,5 @@ ins_right {
   -- color = { fg = colors.green, gui = 'bold' },
 }
 
-
-ins_right {
-  function()
-        local current_line = vim.fn.line "."
-        local total_lines = vim.fn.line "$"
-        local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
-        local line_ratio = current_line / total_lines
-        local index = math.ceil(line_ratio * #chars)
-        return chars[index]
-      end,
-      padding = { left = 0, right = 0 },
-      -- color = { fg = colors.yellow, bg = colors.bg },
-      cond = nil,
-  }
-
 -- Now don't forget to initialize lualine
 require("lualine").setup(config)
