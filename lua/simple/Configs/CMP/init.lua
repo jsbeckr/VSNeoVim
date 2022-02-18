@@ -51,7 +51,8 @@ cmp.setup {
     ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert , exper = true}),
     ['<C-Space>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.close(),
-    ['<Tab>'] = cmp.mapping.confirm({ select = true }),
+    ['<CR>'] = cmp.mapping.confirm({ select = false }),
+    ['<TAB>'] = cmp.mapping.confirm({ select = true }),
   },
   formatting = {
     format = function(_, vim_item)

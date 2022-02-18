@@ -19,7 +19,7 @@ keymap('n', '<C-j>', '<C-w>j', options)
 keymap('n', '<C-k>', '<C-w>k', options)
 keymap('n', '<C-l>', '<C-w>l', options)
 -- Lexplore
-keymap('n', '<leader>e', ':Lex 30<CR>', options)
+keymap('n', '<leader>e', ':Lex 36<CR>', options)
 -- Resize with arrows
 keymap('n', '<C-S-Up>', ':resize -2<CR>', options)
 keymap('n', '<C-S-Down>', ':resize +2<CR>', options)
@@ -45,11 +45,13 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", options)
 -- Home and End
 keymap('n', 'L', '<end>', options)
 keymap('n', 'H', '<home>', options)
+keymap('v', 'L', '<end>', options)
+keymap('v', 'H', '<home>', options)
 -- Undo and Redo
 keymap('n', '<C-z>', ':undo<CR>', options)
 keymap('n', '<C-y>', ':redo<CR>', options)
 -- Tabs
-keymap('n', '<C-w>', ':bd<CR>', options)
+keymap('n', '<C-w>', ':BufDel<CR>', options)
 -- Nvim Tree
 keymap('n', '<C-n>', ':NvimTreeToggle<CR>', options)
 -- Tagbar

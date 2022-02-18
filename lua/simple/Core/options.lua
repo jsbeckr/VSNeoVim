@@ -37,16 +37,12 @@ local optionsconfig = {
   termguicolors = true
 }
 
-local globalconfig = {
-  sonokai_style = 'andromeda'
-}
-
-for k, v in pairs(globalconfig) do
-  GLOBAL[k] = v
-end
+-- for k, v in pairs(globalconfig) do
+--   GLOBAL[k] = v
+-- end
 for k, v in pairs(optionsconfig) do
   OPTIONS[k] = v
 end
 
-vim.cmd "colorscheme kanagawa"
+vim.cmd "colorscheme ayu"
 vim.cmd "set whichwrap+=<,>,[,],h,l"
