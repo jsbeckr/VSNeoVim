@@ -14,7 +14,7 @@ local Configs = {
 	Project = "simple.Configs.Project",
 	Impatient = "simple.Configs.Impatient",
 	IndentLine = "simple.Configs.IndentLine",
-	Alpha = "simple.Configs.Alpha",
+  Alpha = "simple.Configs.Alpha",
 	WhichKey = "simple.Configs.WhichKey",
 	CMP = "simple.Configs.CMP",
 	LSP = "simple.Configs.LSP",
@@ -28,12 +28,15 @@ local Configs = {
 	SymbolsOutline = "simple.Configs.SymbolsOutline",
 	DAP = "simple.Configs.DAP",
 	LazyGit = "simple.Configs.LazyGit",
-  Neorg = "simple.Configs.Neorg"
+  Neorg = "simple.Configs.Neorg",
+  BufDel = "simple.Configs.BufDel",
+  Focus = "simple.Configs.Focus"
 }
 
 for k, v in pairs(Core) do
 	require(v)
 end
+
 for k, v in pairs(Configs) do
 	require(v)
 end
